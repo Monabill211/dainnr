@@ -21,12 +21,12 @@ export default function Tstmoinas() {
   return (
   
      
-    <section className="py-20 px-4 text-center" style={{padding:'100px 15px'}}>
+    <section className="text-center" style={{padding:'100px 15px'}}>
       <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{marginBottom:"50px"}}>
         أصوات حقيقية، نتائج حقيقية
       </h2>
 
-      <div className=" flex flex-wrap gap-6 justify-evenly mt-10 max-w-6xl mx-auto">
+      <div className=" flex flex-wrap gap-6 justify-evenly ">
         {testimonials.map((item, i) => (
           <motion.div
             key={i}
