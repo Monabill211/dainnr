@@ -10,8 +10,8 @@ const fadeUp = {
 
 export default function FeaturesSection() {
   return (
-    <section className="py-24 ">
-      <div className="max-w-6xl mx-auto px-4">
+    <section style={{padding:"10px"}}>
+      <div className="">
 
         {/* TITLE */}
         <motion.div
@@ -33,7 +33,7 @@ export default function FeaturesSection() {
         <div className="bg-white/70 backdrop-blur-xl rounded-[50px] p-6 md:p-14 grid md:grid-cols-2 gap-14 shadow-sm">
 
           {/* 1 */}
-          <motion.div variants={fadeUp} initial="hidden" whileInView="show">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="show" style={{margin:'auto', textAlign:"center",fontWeight:"bold"}} >
             <h3 className="text-2xl font-bold text-[#0f2a3f] mb-4">
               احصل على أعلى نسبة استرداد نقدي
             </h3>
@@ -57,12 +57,13 @@ export default function FeaturesSection() {
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
-            className="rounded-3xl bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] p-6 flex items-center justify-center hover:scale-105 transition"
+          
+          className="rounded-3xl bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] p-6 flex items-center justify-center hover:scale-105 transition"
           >
             <Image src="/iamge/credit-new-img.png" alt="" width={320} height={320} />
           </motion.div>
 
-          <motion.div variants={fadeUp} initial="hidden" whileInView="show">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="show" style={{margin:'auto', textAlign:"center",fontWeight:"bold"}}>
             <h3 className="text-2xl font-bold text-[#0f2a3f] mb-4">
               هل تريد شراء شيء وليس لديك المال؟
             </h3>
@@ -72,7 +73,7 @@ export default function FeaturesSection() {
           </motion.div>
 
           {/* 3 */}
-          <motion.div variants={fadeUp} initial="hidden" whileInView="show">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="show" style={{margin:'auto', textAlign:"center",fontWeight:"bold"}}>
             <h3 className="text-2xl font-bold text-[#0f2a3f] mb-4">
               اعثر على أفضل العروض
             </h3>
