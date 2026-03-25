@@ -49,7 +49,7 @@ export default function FeaturesSection() {
             whileInView="show"
             className="rounded-3xl bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] p-6 flex items-center justify-center hover:scale-105 transition"
           >
-            <Image src="/iamge/cashbacks-img.png" alt="" width={320} height={320} />
+            <Image src="/iamge/WhatsApp Image 2026-03-25 at 11.04.28 PM_cleanup.png" alt="" width={320} height={320} />
           </motion.div>
 
           {/* 2 */}
@@ -60,7 +60,7 @@ export default function FeaturesSection() {
           
           className="rounded-3xl bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] p-6 flex items-center justify-center hover:scale-105 transition"
           >
-            <Image src="/iamge/credit-new-img.png" alt="" width={320} height={320} />
+            <Image src="/iamge/WhatsApp Image 2026-03-25 at 11.04.28 PM_cleanup.png" alt="" width={320} height={320} />
           </motion.div>
 
           <motion.div variants={fadeUp} initial="hidden" whileInView="show" style={{margin:'auto', textAlign:"center",fontWeight:"bold"}}>
@@ -88,7 +88,7 @@ export default function FeaturesSection() {
             whileInView="show"
             className="rounded-3xl bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] p-6 flex items-center justify-center hover:scale-105 transition"
           >
-            <Image src="/iamge/cashbacks-img.png" alt="" width={320} height={320} />
+            <Image src="/iamge/WhatsApp Image 2026-03-25 at 11.04.28 PM_cleanup.png" alt="" width={320} height={320} />
           </motion.div>
 
         </div>
