@@ -89,12 +89,12 @@ function InnovationPhone() {
       </div>
       <div className="flex justify-between items-center px-3 pb-2">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg>
-        <span className="text-white text-[10px] font-semibold">Lucky ONE™Card</span>
+        <span className="text-white text-[10px] font-semibold">dinar™Card</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><circle cx="12" cy="12" r="3" /></svg>
       </div>
       <div className="px-4 pb-2">
         <p className="text-gray-500 text-[8px] mb-0.5">CASH BALANCE</p>
-        <p className="text-white text-xl font-bold">EGP 20,000</p>
+        <p className="text-white text-xl font-bold">BHD 20,000</p>
         <p className="text-gray-600 text-[8px] mt-0.5">CREDIT BALANCE  EGP 20,000</p>
       </div>
       <div className="grid grid-cols-3 gap-1.5 px-3 pb-4">
@@ -271,12 +271,12 @@ function ActiveAppScreen() {
       <div className="flex-1 px-3 pb-3 flex flex-col">
         <div className="flex justify-between items-center mb-2">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg>
-          <span className="text-[11px] font-semibold text-white">Lucky ONE™Card</span>
+          <span className="text-[11px] font-semibold text-white">dinar™Card</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><circle cx="12" cy="12" r="3" /></svg>
         </div>
         <p className="text-[9px] text-gray-500 mb-0.5">CASH BALANCE</p>
-        <p className="text-[22px] font-semibold text-white leading-tight">EGP 20,000</p>
-        <p className="text-[9px] text-gray-600 mb-3">CREDIT BALANCE  EGP 20,000</p>
+        <p className="text-[22px] font-semibold text-white leading-tight">BHD 20,000</p>
+        <p className="text-[9px] text-gray-600 mb-3">CREDIT BALANCE  BHD 20,000</p>
         <div className="grid grid-cols-3 gap-1.5 mb-3">
           {[
             { label: "Add cash",    d: <path d="M12 2v20M2 12h20" /> },
@@ -323,7 +323,7 @@ function ActiveAppScreen() {
 const stepsData = [
   { label: "الخطوة 1 من 3", title: "التحقق من الهوية",  desc: "ارفع صورة من بطاقتك الشخصية الأمامية والخلفية بوضوح كامل بدون ضبابية أو انعكاس" },
   { label: "الخطوة 2 من 3", title: "التحقق من الوجه",   desc: "ضع وجهك داخل الإطار البيضاوي وانظر مباشرة للكاميرا، تأكد من الإضاءة الجيدة وإزالة النظارة" },
-  { label: "الخطوة 3 من 3", title: "البطاقة شغالة!",    desc: "تم التحقق بنجاح! بطاقتك Lucky ONE جاهزة، دلوقتي تقدر تحمل وتبعت وتسحب فلوس" },
+  { label: "الخطوة 3 من 3", title: "البطاقة شغالة!",    desc: "تم التحقق بنجاح! بطاقتك dinar جاهزة، دلوقتي تقدر تحمل وتبعت وتسحب فلوس" },
 ];
 
 function ThreeStepsSection() {
