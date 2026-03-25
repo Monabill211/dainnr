@@ -2,7 +2,7 @@ export function CTASection() {
   return (
     <section className="" style={{padding:'100px 15px'}}>
       <div className="  rounded-3xl text-center text-white
-     bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] relative overflow-hidden" style={{padding:"100px"}}>
+     bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#38bdf8] relative overflow-hidden" style={{padding:"100px 30px" }}>
 
         <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{padding:'10px'}}>
           فوق فلوسك مع لاكي وان

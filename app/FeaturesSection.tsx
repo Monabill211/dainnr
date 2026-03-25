@@ -10,7 +10,7 @@ const fadeUp = {
 
 export default function FeaturesSection() {
   return (
-    <section style={{padding:"10px"}}>
+    <section style={{padding:"10px",marginTop:"30px"}}>
       <div className="">
 
         {/* TITLE */}

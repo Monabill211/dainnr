@@ -185,8 +185,43 @@ function FeatureCardsSection() {
 function IDScreen({ onNext }: { onNext: () => void }) {
   return (
     <div className="flex flex-col h-full bg-white">
-     
-      <img src="/iamge/upload-id-new.png" />
+      <div className="flex justify-between items-center px-4 pt-2 pb-1 text-[10px] font-semibold text-gray-800">
+        <span>10:10</span><span>▌▌▌ 🔋</span>
+      </div>
+      <div className="flex-1 px-3 pb-3 flex flex-col">
+        <div className="flex justify-between items-center mb-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg>
+          <span className="text-[11px] font-semibold text-gray-800">ID Verification</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" strokeWidth="2.5"><path d="M18 6L6 18M6 6l12 12" /></svg>
+        </div>
+        <div className="h-[3px] bg-gray-200 rounded-full mb-1"><div className="h-full bg-violet-600 rounded-full w-[9%]" /></div>
+        <p className="text-[9px] text-gray-400 mb-2">STEP 1/11</p>
+        <p className="text-[11px] font-semibold text-gray-900 mb-2 leading-snug">Take a picture of the front of your ID</p>
+        <div className="rounded-xl p-2.5 mb-2" style={{ background: "linear-gradient(135deg,#fef9c3,#fde68a)" }}>
+          <div className="flex gap-2">
+            <div className="w-8 h-10 rounded bg-amber-500 flex-shrink-0" />
+            <div className="flex flex-col gap-1 flex-1 pt-1">
+              {[100, 75, 85, 60].map((w, i) => <div key={i} className="h-[5px] rounded bg-amber-700/25" style={{ width: `${w}%` }} />)}
+            </div>
+          </div>
+        </div>
+        <p className="text-center text-[9px] font-bold text-gray-400 tracking-widest mb-2">FRONT</p>
+        <div className="flex justify-around mb-3">
+          {["Don't crop", "Not blurry", "No reflection"].map((t) => (
+            <div key={t} className="flex flex-col items-center gap-1">
+              <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.5">
+                  <circle cx="12" cy="12" r="10" /><path d="M15 9l-6 6M9 9l6 6" />
+                </svg>
+              </div>
+              <span className="text-[7px] text-gray-500">{t}</span>
+            </div>
+          ))}
+        </div>
+        <button onClick={onNext} className="mt-auto bg-violet-700 text-white text-[11px] rounded-lg py-2 w-full hover:bg-violet-800 transition-colors">
+          Next →
+        </button>
+      </div>
     </div>
   );
 }
@@ -229,7 +264,57 @@ function SelfieScreen({ onNext }: { onNext: () => void }) {
 
 function ActiveAppScreen() {
   return (
- <img src="/iamge/upload-id-new.png" />
+    <div className="flex flex-col h-full" style={{ background: "#0d0920" }}>
+      <div className="flex justify-between items-center px-4 pt-2 pb-1 text-[10px] font-semibold text-white">
+        <span>10:15</span><span>▌▌▌</span>
+      </div>
+      <div className="flex-1 px-3 pb-3 flex flex-col">
+        <div className="flex justify-between items-center mb-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg>
+          <span className="text-[11px] font-semibold text-white">Lucky ONE™Card</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><circle cx="12" cy="12" r="3" /></svg>
+        </div>
+        <p className="text-[9px] text-gray-500 mb-0.5">CASH BALANCE</p>
+        <p className="text-[22px] font-semibold text-white leading-tight">EGP 20,000</p>
+        <p className="text-[9px] text-gray-600 mb-3">CREDIT BALANCE  EGP 20,000</p>
+        <div className="grid grid-cols-3 gap-1.5 mb-3">
+          {[
+            { label: "Add cash",    d: <path d="M12 2v20M2 12h20" /> },
+            { label: "Send money",  d: <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /> },
+            { label: "Cash out",    d: <><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /></> },
+          ].map(({ label, d }) => (
+            <div key={label} className="flex flex-col items-center gap-1 rounded-xl py-2" style={{ background: "rgba(255,255,255,0.07)" }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2">{d}</svg>
+              <span className="text-[8px] text-white">{label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="rounded-xl p-2" style={{ background: "rgba(255,255,255,0.05)" }}>
+          <p className="text-[9px] text-gray-500 mb-2">Recent transactions</p>
+          <div className="flex justify-between items-center mb-1.5">
+            <div className="flex items-center gap-1.5">
+              <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{ background: "rgba(139,92,246,0.2)" }}>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2">
+                  <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.97-1.61L23 6H6" />
+                </svg>
+              </div>
+              <span className="text-[9px] text-gray-300">Online shop</span>
+            </div>
+            <span className="text-[9px] text-red-400">-EGP 450</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-1.5">
+              <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{ background: "rgba(52,211,153,0.15)" }}>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2"><path d="M12 2v20M2 12h20" /></svg>
+              </div>
+              <span className="text-[9px] text-gray-300">Cash in</span>
+            </div>
+            <span className="text-[9px] text-emerald-400">+EGP 5,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
