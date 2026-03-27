@@ -10,13 +10,14 @@ import { Footer } from "./Footar";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <FeaturesSection />
       <Play />
       <Tstmoinas />
       <CTASection />
-      <Footer />
+      <Footer /> */}
+      لازم ترد عليا 
     </div>
   );
 }
